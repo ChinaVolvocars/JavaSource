@@ -89,8 +89,8 @@ class GreenApple extends Apple{}
  ```
  
  在这个体系中，下界通配符 Plate<? extends Fruit> 覆盖下图中蓝色的区域。
- https://itimetraveler.github.io/gallery/java-genericity/lowerBounds.png
- 
+ <img src="https://github.com/ChinaVolvocars/JavaSource/blob/master/lowerBounds.png">
+
 ## 什么是下界？ 
  
  相对应的，“下界通配符（Lower Bounds Wildcards）”： 
@@ -101,7 +101,8 @@ class GreenApple extends Apple{}
  表达的就是相反的概念：一个能放水果以及一切是水果基类的盘子。```Plate<? super
  Fruit>```是```Plate<Fruit>```的基类，但不是```Plate<Apple>```的基类。对应刚才那个例子，```Plate<?
  super Fruit>```覆盖下图中红色的区域。
- https://itimetraveler.github.io/gallery/java-genericity/upperBounds.png
+ <img src="https://github.com/ChinaVolvocars/JavaSource/blob/master/upperBounds.png">
+ 
  
 ## 上下界通配符的副作用
 边界让Java不同泛型之间的转换更容易了。但不要忘记，这样的转换也有一定的副作用。那就是容器的部分功能可能失效。
